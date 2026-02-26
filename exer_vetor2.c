@@ -1,0 +1,22 @@
+// Escreva um algoritmo que armazene em um vetor todos os números inteiros do intervalo fechado de 1 a 100. Após isso, o algoritmo deve imprimir todos os valores armazenados.
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+int main()
+{
+    setlocale(LC_ALL, "portuguese");
+
+    int num[100], i;
+
+    for (i = 0; i < 100; i++) {
+        num[i] = i + 1;
+    }
+
+    for (i = 0; i < 100; i ++) {
+        printf ("%d ", num[i]);
+    }
+
+    return 0;
+}
